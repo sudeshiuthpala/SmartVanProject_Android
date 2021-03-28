@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone_6__7__8_plus__1"
+    tools:context=".FeesPayment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="387dp"
+            android:layout_height="139dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="231dp"
+                android:layout_height="78dp"
+                android:text="School Van Fees payment"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginBottom="3dp"
+                android:text="*Display all paid / non-paid student list for particular  van in selected month and year.*"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="9dp"
+                android:src="@drawable/image_3" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Van: *"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/vanlist"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Year: *"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/yearlist"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Month: *"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/monthlist"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            />
+
+        <!--<com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#F660AB"
+            app:tabSelectedTextColor="#000"
+            app:tabTextColor="#fff"
+            app:tabIndicatorColor="#000"
+            android:id="@+id/tablay"
+            >
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAID"
+                android:id="@+id/tab1"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NON-PAID"
+                android:background="#fff"
+                android:id="@+id/tab2"/>
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpage"
+            android:layout_width="match_parent"
+            android:layout_height="431dp" />-->
+
+        <Button
+            android:id="@+id/paid"
+            android:layout_width="355dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/morningroutine"
+            android:text="Paid List"
+
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/nonpaid"
+            android:layout_width="355dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/eveningroutine"
+            android:text="Non-paid list"
+
+            android:textColor="#fff"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartvanproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NonPaidPayment"></activity>
+        <activity android:name=".PaidPayment" />
+        <activity android:name=".FeesPayment" />
+        <activity android:name=".VanRemoveAction" />
+        <activity android:name=".RemoveChild" />
+        <activity android:name=".ChildRemoveAction" />
+        <activity android:name=".VanStudentHome" />
+        <activity android:name=".VanSchoolChange" />
+        <activity android:name=".VanLocationChange" />
+        <activity android:name=".DriverUpdate" />
+        <activity android:name=".VanDriverChange" />
+        <activity android:name=".VanUpdateHome" />
+        <activity android:name=".ViewVanSchool" />
+        <activity android:name=".ViewVanLocation" />
+        <activity android:name=".VanRegSuccess" />
+        <activity android:name=".VanLocation" />
+        <activity android:name=".VanSchool" />
+        <activity android:name=".ViewVan" />
+        <activity android:name=".VanRegistration" />
+        <activity android:name=".RemoveDriver" />
+        <activity android:name=".DriverRemoveAction" />
+        <activity android:name=".DriverViewDetails" />
+        <activity android:name=".DriverRegistration" />
+        <activity android:name=".RequestReject" />
+        <activity android:name=".RequestRejectAction" />
+        <activity android:name=".RequestAccept" />
+        <activity android:name=".RequestAcceptAction" />
+        <activity android:name=".RequestBackgroundWorker" />
+        <activity android:name=".OwnerReports" />
+        <activity android:name=".Payments" />
+        <activity android:name=".VanManagement" />
+        <activity android:name=".DriverManagement" />
+        <activity android:name=".RequestHome" />
+        <activity android:name=".ParentDashboard" />
+        <activity android:name=".VanOwnerDashboard" />
+        <activity android:name=".DriverDashboard" />
+        <activity android:name=".LoginBackend" />
+        <activity android:name=".ParentRegBackend" />
+        <activity android:name=".ParentRegistration" />
+        <activity android:name=".VanOwnerRegBackend" />
+        <activity android:name=".VanOwnerRegister" />
+        <activity android:name=".RegistrationInterface" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

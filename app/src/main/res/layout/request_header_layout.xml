@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:orientation="horizontal"
+    android:background="?attr/colorPrimary">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Request Id"
+        android:gravity="center_vertical"
+        android:textSize="10dp"
+        android:id="@+id/hrequestID"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Request Date"
+        android:gravity="center_vertical"
+        android:textSize="10dp"
+        android:id="@+id/hrequestDate"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Van ID"
+        android:gravity="center_vertical"
+        android:textSize="10dp"
+        android:id="@+id/hVanID"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="First Name"
+        android:gravity="center_vertical"
+        android:textSize="10dp"
+        android:id="@+id/hchildFName"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Last Name"
+        android:gravity="center_vertical"
+        android:textSize="10dp"
+        android:id="@+id/childLName"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Location"
+        android:gravity="center_vertical"
+        android:textSize="10dp"
+        android:id="@+id/hchildLocation"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="School"
+        android:gravity="center_vertical"
+        android:textSize="10dp"
+        android:id="@+id/hchildSchool"
+        android:textStyle="bold"/>
+
+</LinearLayout>
