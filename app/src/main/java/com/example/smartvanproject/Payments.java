@@ -31,5 +31,21 @@ public class Payments extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        salary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Payments.this,SalaryPayment.class);
+                i.putExtra("name",r);
+                startActivity(i);
+            }
+        });
+        notify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Payments.this,FeesPaymentNotification.class);
+                i.putExtra("name",r);
+                startActivity(i);
+            }
+        });
     }
 }

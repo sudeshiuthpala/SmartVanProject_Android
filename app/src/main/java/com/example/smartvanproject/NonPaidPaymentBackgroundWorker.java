@@ -29,7 +29,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class NonPaidPaymentBackgroundWorker extends AsyncTask<String,NonFeePayment,Void> {
-    String json_string="http://192.168.1.102/smartvan/feeNonPaidList.php";
+    String json_string="http://192.168.1.102/smartvan/feesNonPaidList.php";
     Context context;
     Activity activity;
     AlertDialog alertDialog;
@@ -59,8 +59,8 @@ public class NonPaidPaymentBackgroundWorker extends AsyncTask<String,NonFeePayme
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, StandardCharsets.UTF_8));
             String post_data= URLEncoder.encode("vanId","UTF-8")+"="+URLEncoder.encode(vanId,"UTF-8")+"&"+
                     URLEncoder.encode("year","UTF-8")+"="+URLEncoder.encode(year,"UTF-8")+"&"+
-                    URLEncoder.encode("month","UTF-8")+"="+URLEncoder.encode(month,"UTF-8");
-            // URLEncoder.encode("Nic","UTF-8")+"="+URLEncoder.encode(Nic,"UTF-8");
+                    URLEncoder.encode("month","UTF-8")+"="+URLEncoder.encode(month,"UTF-8")+"&"+
+                 URLEncoder.encode("Nic","UTF-8")+"="+URLEncoder.encode(Nic,"UTF-8");
             bufferedWriter.write(post_data);
             bufferedWriter.flush();
             bufferedWriter.close();
@@ -108,7 +108,7 @@ public class NonPaidPaymentBackgroundWorker extends AsyncTask<String,NonFeePayme
 
     @Override
     protected void onPreExecute() {
-        recyclerView=(RecyclerView)activity.findViewById(R.id.paidRecyclerView);
+        recyclerView=(RecyclerView)activity.findViewById(R.id.nonpaidRecyclerView);
         layoutManager = new LinearLayoutManager(context);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);

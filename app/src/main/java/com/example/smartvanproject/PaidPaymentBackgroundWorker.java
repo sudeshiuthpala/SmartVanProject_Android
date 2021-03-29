@@ -29,7 +29,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class PaidPaymentBackgroundWorker extends AsyncTask<String,FeePayment,Void> {
-    String json_string="http://192.168.1.102/smartvan/feePaidList.php";
+    String json_string="http://192.168.1.102/smartvan/feesPaidList.php";
     Context context;
     Activity activity;
     AlertDialog alertDialog;
@@ -59,8 +59,8 @@ public class PaidPaymentBackgroundWorker extends AsyncTask<String,FeePayment,Voi
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, StandardCharsets.UTF_8));
             String post_data= URLEncoder.encode("vanId","UTF-8")+"="+URLEncoder.encode(vanId,"UTF-8")+"&"+
                     URLEncoder.encode("year","UTF-8")+"="+URLEncoder.encode(year,"UTF-8")+"&"+
-                    URLEncoder.encode("month","UTF-8")+"="+URLEncoder.encode(month,"UTF-8");
-                   // URLEncoder.encode("Nic","UTF-8")+"="+URLEncoder.encode(Nic,"UTF-8");
+                    URLEncoder.encode("month","UTF-8")+"="+URLEncoder.encode(month,"UTF-8")+"&"+
+                    URLEncoder.encode("Nic","UTF-8")+"="+URLEncoder.encode(Nic,"UTF-8");
             bufferedWriter.write(post_data);
             bufferedWriter.flush();
             bufferedWriter.close();

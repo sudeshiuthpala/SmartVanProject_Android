@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="141dp"
         android:layout_marginTop="42dp"
-        android:text="@string/smartvan"
+        android:text="SmartVan"
         android:textColor="#000"
         android:textSize="30sp"
         android:textStyle="bold" />

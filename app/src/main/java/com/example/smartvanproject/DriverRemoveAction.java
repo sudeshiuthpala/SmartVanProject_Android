@@ -24,7 +24,7 @@ public class DriverRemoveAction extends AppCompatActivity {
     }
 
     public void onRemoveDriver(View view) {
-        ChildRemoveActionBackend bg=new ChildRemoveActionBackend(this);
+        DriverRemoveActionBackend bg=new DriverRemoveActionBackend(this);
         bg.execute(j);
 
     }
