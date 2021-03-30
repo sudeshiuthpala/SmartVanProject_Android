@@ -20,7 +20,7 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/paymentid2"
+            android:id="@+id/paymentid6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -45,7 +45,7 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/childid3"
+            android:id="@+id/childid6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -72,7 +72,7 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/childfname3"
+            android:id="@+id/childfname6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -97,7 +97,7 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/childlname3"
+            android:id="@+id/childlname6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -122,7 +122,7 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/amount2"
+            android:id="@+id/amount6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -147,7 +147,7 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/paymentdate"
+            android:id="@+id/paymentdate6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -160,63 +160,80 @@
             android:textSize="15dp"
             android:textStyle="bold" />
 
+        <Button
+            android:id="@+id/acceptfees"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="165dp"
+            android:background="@drawable/custombuttonno"
+            android:text="ACCEPT" />
 
+        <Button
+            android:id="@+id/rejectfees"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="23dp"
+            android:background="@drawable/custombuttonyes"
+            android:text="REJEcT" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/viewlocation"-->
+        <!--            android:layout_width="122dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_marginTop="150dp"-->
+        <!--            android:layout_marginEnd="220dp"-->
+        <!--            android:background="@drawable/custombuttonno"-->
+        <!--            android:text="VIEW LOCATION" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/viewschool"-->
+        <!--            android:layout_width="122dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_marginTop="150dp"-->
+        <!--            android:layout_marginEnd="64dp"-->
+        <!--            android:background="@drawable/custombuttonno"-->
+        <!--            android:text="VIEW SCHOOL" />-->
 
 
         <!--        <Button-->
-<!--            android:id="@+id/viewlocation"-->
-<!--            android:layout_width="122dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginTop="150dp"-->
-<!--            android:layout_marginEnd="220dp"-->
-<!--            android:background="@drawable/custombuttonno"-->
-<!--            android:text="VIEW LOCATION" />-->
+        <!--            android:id="@+id/vanupdate"-->
+        <!--            android:layout_width="127dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_marginTop="220dp"-->
+        <!--            android:layout_marginEnd="258dp"-->
+        <!--            android:background="@drawable/eveningroutine"-->
+        <!--            android:text="UPDATE"-->
+        <!--            android:textColor="#fff" />-->
 
-<!--        <Button-->
-<!--            android:id="@+id/viewschool"-->
-<!--            android:layout_width="122dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginTop="150dp"-->
-<!--            android:layout_marginEnd="64dp"-->
-<!--            android:background="@drawable/custombuttonno"-->
-<!--            android:text="VIEW SCHOOL" />-->
+        <!--        <Button-->
+        <!--            android:id="@+id/vanstudent"-->
+        <!--            android:layout_width="127dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_marginTop="220dp"-->
+        <!--            android:layout_marginEnd="133dp"-->
+        <!--            android:background="@drawable/eveningroutine"-->
+        <!--            android:text="Manage Students"-->
+        <!--            android:textColor="#fff" />-->
 
+        <!--        <Button-->
+        <!--            android:id="@+id/vandelete"-->
+        <!--            android:layout_width="126dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_marginTop="220dp"-->
+        <!--            android:layout_marginEnd="2dp"-->
+        <!--            android:background="@drawable/custombuttonyes"-->
+        <!--            android:text="DELETE"-->
 
-<!--        <Button-->
-<!--            android:id="@+id/vanupdate"-->
-<!--            android:layout_width="127dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginTop="220dp"-->
-<!--            android:layout_marginEnd="258dp"-->
-<!--            android:background="@drawable/eveningroutine"-->
-<!--            android:text="UPDATE"-->
-<!--            android:textColor="#fff" />-->
-
-<!--        <Button-->
-<!--            android:id="@+id/vanstudent"-->
-<!--            android:layout_width="127dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginTop="220dp"-->
-<!--            android:layout_marginEnd="133dp"-->
-<!--            android:background="@drawable/eveningroutine"-->
-<!--            android:text="Manage Students"-->
-<!--            android:textColor="#fff" />-->
-
-<!--        <Button-->
-<!--            android:id="@+id/vandelete"-->
-<!--            android:layout_width="126dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginTop="220dp"-->
-<!--            android:layout_marginEnd="2dp"-->
-<!--            android:background="@drawable/custombuttonyes"-->
-<!--            android:text="DELETE"-->
-
-<!--            android:textColor="#fff" />-->
+        <!--            android:textColor="#fff" />-->
 
         <!--<ImageView
             android:layout_width="50dp"

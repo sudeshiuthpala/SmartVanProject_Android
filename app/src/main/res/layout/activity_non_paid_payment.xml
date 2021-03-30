@@ -43,7 +43,7 @@
                 android:layout_width="141dp"
                 android:layout_height="104dp"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/pay" />
+                android:src="@drawable/image_3" />
 
 
         </RelativeLayout>

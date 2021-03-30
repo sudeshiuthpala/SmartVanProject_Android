@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -245,7 +246,7 @@ public class FeesPayment extends AppCompatActivity implements AdapterView.OnItem
                     //Thread.sleep(1000);
 
                 }
-                //Log.d("JSON STRING",result);
+                Log.d("JSON STRING",result);
                 //return result.toString();
             } catch (MalformedURLException e) {
                 e.printStackTrace();
