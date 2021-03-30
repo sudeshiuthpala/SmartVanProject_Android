@@ -12,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NonPaidSalaryReport"></activity>
+        <activity android:name=".MorningRoutingChildList"></activity>
+        <activity android:name=".MorningRoutingVanList" />
+        <activity android:name=".MorningRoutingHome" />
+        <activity android:name=".EveningRoutingHome" />
+        <activity android:name=".NonPaidSalaryReport" />
         <activity android:name=".PaidSalaryReport" />
         <activity android:name=".VanReport" />
         <activity android:name=".SalaryReport" />
