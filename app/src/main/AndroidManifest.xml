@@ -12,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RejectFees"></activity>
+        <activity android:name=".NonPaidSalaryReport"></activity>
+        <activity android:name=".PaidSalaryReport" />
+        <activity android:name=".VanReport" />
+        <activity android:name=".SalaryReport" />
+        <activity android:name=".RejectFees" />
         <activity android:name=".AcceptFees" />
         <activity android:name=".FeesPaymentNotification" />
         <activity android:name=".SalaryPayment" />

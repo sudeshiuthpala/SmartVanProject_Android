@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OwnerReports"
-    android:background="@drawable/iphone_x__xs__11_pro__2">
+    android:background="@drawable/iphone_6__7__8_plus__1"
+    tools:context=".PaidSalaryReport">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,53 +14,56 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="110dp"
+            android:layout_height="113dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="32dp"
             android:layout_marginRight="20dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reports"
-                android:textColor="#fff"
+                android:layout_width="223dp"
+                android:layout_height="50dp"
+                android:text="Salary Paid List"
+                android:textColor="#000"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="268dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginBottom="-1dp"
-                android:text="**Reports for Van owner about payments,school vans,students and drivers**"
-                android:textColor="#fff"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="32dp"
+                android:text="*List of your vans with details*"
+                android:textColor="#000"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
             <ImageView
-                android:layout_width="82dp"
-                android:layout_height="82dp"
+                android:layout_width="141dp"
+                android:layout_height="104dp"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="3dp"
-                android:layout_marginBottom="10dp"
-                android:src="@drawable/report" />
+                android:src="@drawable/income_statement_512" />
+
+
         </RelativeLayout>
 
-        <GridLayout
-            android:layout_marginTop="50dp"
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/paidSalaryRecyclerView"/>
+
+        <!--<GridLayout
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnOrderPreserved="false"
             android:alignmentMode="alignMargins"
-            android:rowCount="2"
             android:columnCount="1">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/salaryReport"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -75,66 +78,83 @@
                     android:gravity="center"
                     android:padding="16dp"
                     android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="115dp"
-                        android:layout_height="107dp"
-                        android:src="@drawable/income_statement_512" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="46dp"
-                        android:layout_row="0"
-                        android:layout_column="1"
-                        android:layout_marginTop="12dp"
-                        android:text="SALARY PAYMENTS REPORT"
-                        android:textColor="#000"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/vanReport"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="30dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="92dp"
-                        android:layout_height="81dp"
-                        android:src="@drawable/vreport1581984"
-                        android:layout_marginTop="10dp"/>
-
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-                        android:text="VAN REPORT"
+                        android:text="Van Id+Details"
+                        android:textSize="15sp"
                         android:textColor="#000"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:layout_marginTop="12dp"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="30dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Van Id+details"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:layout_marginTop="12dp"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="30dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Van Id+details"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:layout_marginTop="12dp"/>
+
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
 
+        </GridLayout>-->
 
-
-        </GridLayout>
 
     </LinearLayout>
+
+
+
 </ScrollView>
