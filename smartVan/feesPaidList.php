@@ -10,10 +10,15 @@ $conn=mysqli_connect($server_name,$mysql_username,$mysql_password,$db_name) ;
 // else{
 //   echo "not success!" ;
 // }
-$User_Nic=$_POST["Nic"]
+
 $van_Id=$_POST["vanId"];
-$month=$_POST["month"];
 $year=$_POST["year"];
+$month=$_POST["month"];
+$User_Nic=$_POST["Nic"];
+// $User_Nic="814107563v"
+// $van_Id="Na1236";
+// $month="January";
+// $year="2021";
 //echo $User_Nic;
 //$query="SELECT * FROM parent;";
 $quary="SELECT feesPayment.paymentID,feesPayment.childID,child.fname,child.lname,feesPayment.amount,feesPayment.payment_date
